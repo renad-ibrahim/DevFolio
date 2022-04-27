@@ -1,0 +1,377 @@
+.fixed-arrow{
+    position: fixed;
+    bottom: 40px;
+    right: 0;
+}
+.fixed-arrow span{
+    background-color: #0078ff;
+    color: #fff;
+}
+/* ********************* header section ******************* */
+.header{
+    background-image: url('../images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+.layer{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.bg-transparent{
+    background-color: rgba(0, 0, 0, 0.9) !important;
+    z-index: 10000;
+}
+.header a {
+    color: #fff;
+}
+.dropdown-menu{
+    background-color: transparent;
+}
+.active{
+    font-size: 16px;
+    font-weight: 600;
+}
+.sections {
+    font-size: 16px;
+    font-weight: 600;
+    transition-property: border-bottom;
+    transition-duration: 1s;
+}
+.sections:hover{
+    border-bottom: 1px solid #fff;
+    padding-bottom: 2px;
+}
+.logo{
+    font-size: 28px;
+}
+.header-content h1{
+    color: #fff;
+    font-size: 60px;
+    font-weight: 600;
+}
+.header-content h2::after{
+    content: "|";
+    color: #fff;
+    animation-name: jobTitle;
+    animation-duration:6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+} 
+@keyframes jobTitle {
+    0%{content: 'Designer|';}
+    2%{content: 'Designer|';}  
+    4%{content: 'Design|';} 
+    6%{content: 'Design|';} 
+    8%{content: 'Desig|';} 
+    9%{content: 'Desi|';} 
+    10%{content: 'Des|';} 
+    12%{content: 'De|';} 
+    18%{content: 'Dev|';} 
+    20%{content: 'Deve|';} 
+    22%{content: 'Devel|';}  
+    24%{content: 'Develo|';}
+    26%{content: 'Develop|';}
+    28%{content: 'Develope|';}
+    30%{content: 'Developer|';}
+    32%{content: 'Develope|';}
+    34%{content: 'Develop|';}
+    36%{content: 'Develo|';}
+    38%{content: 'Devel|';}
+    40%{content: 'Deve|';}
+    42%{content: 'Dev|';}
+    44%{content: 'De|';}
+    46%{content: 'D|';}
+    48%{content: '|';}
+    50%{content: 'p|';}
+    52%{content: 'ph|';}
+    54%{content: 'pho|';}
+    56%{content: 'phot|';}  
+    58%{content: 'photo|';}
+    60%{content: 'photog|';}
+    62%{content: 'photogr|';}
+    64%{content: 'photogra|';}
+    66%{content: 'photograp|';}
+    68%{content: 'photograph|';}
+    70%{content: 'photographe|';}
+    72%{content: 'photographer|';}
+    74%{content: 'photographe|';}
+    76%{content: 'photograph|';}
+    78%{content: 'photograp|';}
+    80%{content: 'photogra|';}
+    82%{content: 'photogr|';}
+    84%{content: 'photog|';}
+    86%{content: 'photo|';}
+    88%{content: 'phot|';}
+    90%{content: 'pho|';}
+    92%{content: 'ph|';}
+    94%{content: 'p|';} 
+    100%{content: '|';}
+}
+/* ******************* about section ********************** */
+.underline::after{
+    content: " ";
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: #0078ff;
+}
+.About .container{
+    background-color: #fff;
+    box-shadow: 0px 0px 6px #ddd;
+}
+@media screen and (max-width:767px){
+    .about-me{
+        padding-top: 30px;
+    }
+}
+/* ************ services section ************* */
+.service{
+    background-color: #fff;
+    box-shadow: 0px 0px 5px #ddd;
+}
+.service i{
+    font-size: 40px;
+    border: 6px solid #0078ff;
+    transition-property: background-color , color , border;
+    transition-duration: 1s;
+}
+.service:hover i{
+    border: 6px solid #c6e1ff7a;
+    background-color: #0078ff;
+    color: #fff;
+}
+/* **************** counter section ************* */
+.counter{
+    background-image: url('../images/counter/counters-bg.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+}
+ .overlay{
+    background-color: rgba(0, 129, 227, 0.6);
+}
+.counter .count i{
+    font-size: 40px;
+    border: 8px solid #c6e1ff7a;
+    transition-property: background-color , color , border;
+    transition-duration: 1s;
+    color: #fff;
+}
+.count h4{
+    font-size: 30px;
+}
+.count p{
+    color: #fff;
+}
+/* ************** PORTFOLIO section ***************** */
+.card p span{
+    color: #0078ff;
+}
+.card i{
+    font-size: 45px;
+}
+.image{
+    overflow: hidden;
+}
+.card .image img{
+    transition-property: transform;
+    transform-origin: center center;
+    transition-duration: 2s;
+}
+.card:hover .image img{
+    transform: scale(1.2 , 1.2);
+}
+/* *********** Testimonial section ******************** */
+.testimonial{
+    background-image: url('../images/testimonial/overlay-bg.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    height: 60%;
+}
+.testimonial .overlay{
+    height: 100%;
+}
+.carousel-item img{
+    width: 15%;
+}
+.carousel-item p{
+    color: #fff;
+}
+.carousel-indicators [data-bs-target] {
+    width: 15px ;
+    height: 15px ;
+    border-radius: 50%;
+}
+.carousel-indicators{
+    bottom: -70px;
+}
+/* ******************** blog section *************************** */
+ .card .image img{
+    border-top-right-radius: 0.25rem;
+    border-top-left-radius: 0.25rem;
+    position: relative;
+}
+.blog .card-footer img{
+    width: 35px;
+    height: 35px;
+}
+.blog .card-content h3 a{
+    color: #000;
+    transition-property: color;
+    transition-duration: 1s;
+}
+.blog .card-content h3 a:hover{
+    color: #0078ff;
+}
+.category-box{
+    top: -15px;
+}
+.card-category p{
+    color: #fff;
+    background-color: #0078ff;
+    padding: 5px;
+}
+.card-footer span i{
+    font-size: 20px;
+}
+/* ********** contact section ************* */
+.contact{
+    background-image: url('../images/testimonial/overlay-bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.contact-info .btn{
+    background-color: #0078ff;
+    color: #fff;
+}
+.contact-bg{
+    background-color: #fff;
+}
+.contact-tools p span{
+    color: #0078ff;
+}
+.contact-social span i{
+    color: #000;
+    border: 3px solid #0078ff;
+    border-radius: 50%;
+    padding: 15px;
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+.contact-social span:hover i{
+    background-color: #0078ff;
+    color: #fff;
+    border: 3px solid #c6e1ff7a;
+}
+/* ************* footer section ***************** */
+.footer{
+    background-color: #0062d3;
+    box-shadow: 0px 1px 8px #ccc;
+} 
+.footer div p {
+    color:#fff;
+}
+/* ******************************************************************************************************************************************************************************/
+                                                        /* ********* Portfolio Page ************** */
+/* ******************************************************************************************************************************************************************************/
+/* ******* portfolio header ********* */
+.portfoilo-header{
+    background-image: url('../images/testimonial/overlay-bg.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 400px;
+    color: #fff;
+}
+.portfoilo-header a{
+    color: #fff;
+}
+.portfoilo-header .breadcrumb .active ,
+.portfoilo-header .breadcrumb .active::before{
+    color: #cde1f8;
+}
+.portfolio-details{
+    background-color: #ddd;
+}
+.project-info{
+    background-color: #fff;
+    box-shadow: 0px 0px 10px #a6a6a6;
+}
+.carousel-indicators [data-bs-target]{
+    background-color: #0078ff;
+}
+/* ******************************************************************************************************************************************************************************/      
+                                                        /* ************* blog page ***************** */
+/* ******************************************************************************************************************************************************************************/
+ .blog-header{
+    background-image: url('../images/testimonial/overlay-bg.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 400px;
+    color: #fff;
+}
+.blog-header a{
+    color: #fff;
+}
+.bg-fixed-color{
+   background-color:  rgba(0, 129, 227, 0.6);
+}
+.blog-header .breadcrumb .active ,
+.blog-header .breadcrumb .active::before ,
+.blog-header .breadcrumb-item+.breadcrumb-item::before{
+    color: #cde1f8;
+}
+.blog-content{
+    background-color: #ddd;
+}
+.line::after{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 25px;
+    background-color: #0078ff;
+}
+.line-sign{
+    border-left: 4px solid #0078ff;
+    padding: 10px;
+    font-weight: 500;
+    
+}
+.blog-article{
+    background-color: #fff;
+}
+.search-box ,
+.recent-post ,
+.archives,
+.tags,
+.reply {
+    background-color: #fff;
+}
+.blog-content .btn{
+    background-color: #0078ff;
+}
+.blog-content ul li a{
+    color: #000;
+} 
+.blog-content ul li a::after{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background-color: #0078ff;
+    top: 12px;
+    left: 0px;
+}
+.comments{
+    background-color: #fff;
+}
+.reply form textarea{
+    height: 150px;
+}
+.reply form .btn{
+    color: #fff;
+}
